@@ -9,7 +9,7 @@ permalink: /team
 
         {% for member in site.data.members.team %}
             <div class="d-flex align-items-center mb-2">
-                <img src="{{"/assets/img/flag_be.png" | relative_url}}" alt="Flag" class="me-2" style="width: 32px; height: 24px; object-fit: cover;">
+                <img src="{{"/assets/img/flag_be.png" | relative_url}}" alt="Flag" class="me-2">
                 <span>{{ member.first }} <strong>"{{ member.nick }}"</strong> {{ member.last }}</span>
             </div>
         {% endfor %}
@@ -23,7 +23,7 @@ permalink: /team
 
         {% for member in site.data.members.management %}
             <div class="d-flex align-items-center mb-2">
-                <img src="{{"/assets/img/flag_be.png" | relative_url}}" alt="Flag" class="me-2" style="width: 32px; height: 24px; object-fit: cover;">
+                <img src="{{"/assets/img/flag_be.png" | relative_url}}" alt="Flag" class="me-2">
                 <span>{{ member.first }} <strong>"{{ member.nick }}"</strong> {{ member.last }}</span>
             </div>
         {% endfor %}
