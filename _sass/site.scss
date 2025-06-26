@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import "fonts";
+
+$background-color: #868686;
+
+$navbar-background: #1E1E1E;
+$navbar-color: #5D9AE3;
+$navbar-accent: #FF4655;
+$navbar-link-active: white;
+$navbar-hamburger: white;
+
+body {
+  background-color: $background-color;
+}
+
+
+.navbar {
+  background: $navbar-background;
+  color: $navbar-color;
+  box-shadow:
+    0 -5px 10px -5px $navbar-accent,
+    0 5px 10px -5px $navbar-accent;
+
+  @media (min-width: 992px) {
+    #navbarNav {
+      display: none !important;
+    }
+  }
+
+  .navbar-toggler {
+    background: $navbar-hamburger;
+  }
+
+  .nav-link {
+    font-family: FSP Demo;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+    color: $navbar-color;
+
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    &:hover { color: $navbar-link-active; text-shadow: 0 0 8px #ff4655; }
+    &:active { color: $navbar-link-active; }
+    &:focus { color: $navbar-link-active; }
+    &:focus-visible { color: $navbar-link-active; outline: 2px solid $navbar-link-active; }
+    &:visited { color: $navbar-color; }
+
+    &:first-child {
+      margin-right: 40px;
+    }
+
+    &.active {
+      color: $navbar-link-active;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+  }
+}
