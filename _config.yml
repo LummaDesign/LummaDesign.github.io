@@ -12,6 +12,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+google_analytics: G-4GZ2J2QFX5
+
 include:
   - _pages
 
