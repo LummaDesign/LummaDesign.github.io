@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /team
+---
+
+<div class="d-flex justify-content-center" style="margin-bottom: 60px">
+    <div style="width: 600px;">
+        <h1 class="text-center">Team</h1>
+
+        {% for member in site.data.members.team %}
+            <div class="d-flex align-items-center mb-2">
+                <img src="{{"/assets/img/flag_be.png" | relative_url}}" alt="Flag" class="me-2" style="width: 32px; height: 24px; object-fit: cover;">
+                <span>{{ member.first }} <strong>"{{ member.nick }}"</strong> {{ member.last }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="d-flex justify-content-center">
+    <div style="width: 600px;">
+        <h1 class="text-center">Management</h1>
+
+        {% for member in site.data.members.management %}
+            <div class="d-flex align-items-center mb-2">
+                <img src="{{"/assets/img/flag_be.png" | relative_url}}" alt="Flag" class="me-2" style="width: 32px; height: 24px; object-fit: cover;">
+                <span>{{ member.first }} <strong>"{{ member.nick }}"</strong> {{ member.last }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <div class="navbar-nav d-none d-lg-flex">
-      <a class="nav-link active" href="/">Home</a>
-      <a class="nav-link" href="/team">Team</a>
+      <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/">Home</a>
+      <a class="nav-link {% if page.url == '/team' %}active{% endif %}" href="/team">Team</a>
     </div>
 
     <img src="{{ 'assets/img/logo-header.png' | absolute_url }}">
 
     <div class="navbar-nav d-none d-lg-flex">
-      <a class="nav-link" href="/partners">Partners</a>
-      <a class="nav-link" href="/contact">Contact</a>
+      <a class="nav-link {% if page.url == '/partners' %}active{% endif %}" href="/partners">Partners</a>
+      <a class="nav-link {% if page.url == '/contact' %}active{% endif %}" href="/contact">Contact</a>
     </div>
 
     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

@@ -12,8 +12,24 @@ $navbar-hamburger: white;
 
 body {
   background-color: $background-color;
+  font-family: QuanSlimR Regular;
+  font-size: 28px;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 64px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: FSP Demo;
+}
+
+p {
+  line-height: 26px;
+}
 
 .navbar {
   background: $navbar-background;
@@ -21,6 +37,7 @@ body {
   box-shadow:
     0 -5px 10px -5px $navbar-accent,
     0 5px 10px -5px $navbar-accent;
+  margin-bottom: 50px;
 
   @media (min-width: 992px) {
     #navbarNav {
@@ -33,7 +50,7 @@ body {
   }
 
   .nav-link {
-    font-family: FSP Demo;
+    font-family: SourceSansPro-Bold;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 26px;
@@ -56,5 +73,27 @@ body {
       border-top: 2px solid white;
       border-bottom: 2px solid white;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    padding-left: 160px;
+  }
+}
+
+
+.contact {
+  margin-bottom: 25px;
+
+  img {
+    margin-right: 50px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
   }
 }

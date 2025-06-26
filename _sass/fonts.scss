@@ -17,10 +17,19 @@
 }
 
 @font-face {
-  font-family: "valorax";
-  src: url("./fonts/valorax.eot") format("eot"),
-    url("./fonts/valorax.woff2") format("woff2"),
-    url("./fonts/valorax.woff") format("woff"),
-    url("./fonts/valorax.ttf") format("truetype"),
-    url("./fonts/valorax.svg") format("svg");
+  font-family: Valorax;
+  src: url("./fonts/Valorax.eot") format("eot"),
+    // url("./fonts/Valorax.woff2") format("woff2"), // problem with convertion
+    url("./fonts/Valorax.woff") format("woff"),
+    url("./fonts/Valorax.ttf") format("truetype"),
+    url("./fonts/Valorax.svg") format("svg");
+}
+
+@font-face {
+  font-family: SourceSansPro-Bold;
+  src: url("./fonts/SourceSansPro-Bold.eot") format("eot"),
+    url("./fonts/SourceSansPro-Bold.woff2") format("woff2"),
+    url("./fonts/SourceSansPro-Bold.woff") format("woff"),
+    url("./fonts/SourceSansPro-Bold.ttf") format("truetype"),
+    url("./fonts/SourceSansPro-Bold.svg") format("svg");
 }

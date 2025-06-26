@@ -1,22 +1,19 @@
 title: Little Giants
 email: littlegiantsbe@gmail.com
 description: >-
-  We are Little Giants, a Belgian esports team focused on Counter-Strike 2.
-  Whether we're practicing, competing, or connecting with our community,
-  our goal is simple: to keep improving and to play at the highest level.
-
-  Join us on our journey as we push our limits, take on new challenges, and aim for victory.
-  Stay updated with our latest matches, streams, and team news.
-
-  Game. Compete. Grow.
+  Belgian Counter-Strike 2 esports team
 baseurl: ""
 url: ""
 discord: jCG3EF5fJs
+logo: assets/img/logo.png
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
