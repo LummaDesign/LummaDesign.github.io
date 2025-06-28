@@ -102,5 +102,9 @@ p {
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
+
+    &.management {
+      font-size: 36px;
+    }
   }
 }
