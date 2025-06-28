@@ -103,8 +103,14 @@ p {
   h1 {
     font-size: 48px;
 
-    &.management {
+    &.mobile-sm-title {
       font-size: 36px;
+    }
+  }
+
+  .contact {
+    img {
+      margin-right: 20px;
     }
   }
 }
