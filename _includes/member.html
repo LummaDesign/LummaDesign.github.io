@@ -1,0 +1,7 @@
+{%- assign member = include.member -%}
+<div class="d-flex align-items-center mb-2">
+    {%- assign flag = "/assets/img/flag_" | append: member.country -%}
+    {%- assign flag = flag | append: ".png" -%}
+    <img src="{{flag | relative_url}}" alt="Flag" class="me-2">
+    <span>{{ member.first }} <strong>"{{ member.nick }}"</strong> {{ member.last }}</span>
+</div>
