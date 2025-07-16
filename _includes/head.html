@@ -4,6 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="{{ 'assets/img/logo-header.png' | relative_url }}">
 
+  {%- if page.title -%}
+  <title>{{ page.title }} | {{ site.title }}</title>
+  {%- else -%}
+  <title>{{ site.title }} | {{ site.description }}</title>
+  {%- endif -%}
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
