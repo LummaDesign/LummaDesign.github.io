@@ -7,16 +7,9 @@
 
     {%- include header.html -%}
 
-    <main class="container" aria-label="Content">
-      <div class="row">
-        <div class="col-lg-4 order-2 order-lg-1">
-          <img src="{{ 'assets/img/logo-main.png' | relative_url }}" class="img-fluid">
-        </div>
-        <div class="col-lg-8 order-1 order-lg-2 content mb-5">
-          {{ content }}
-        </div>
-      </div>
-    </main>
+    <div class="full-container">
+      {{ content }}
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 

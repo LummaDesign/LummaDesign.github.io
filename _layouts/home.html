@@ -2,20 +2,116 @@
 layout: default
 ---
 
-<h1>Home</h1>
 
-<p style="text-align: center;">
-  We are <b>Little Giants</b>, a Belgian based Esports team focused on Counter-Strike 2.
-  <br />
-  Whether we're practicing, competing, or connecting with our community,
-  our goal is simple: to keep improving and to play at the highest level.
+<div class="container">
+  <div class="row mb-5">
+    <div class="col-lg-4" style="text-align: center;">
+      <img src="{{ 'assets/img/logo-main.png' | relative_url }}" class="img-fluid">
+    </div>
+    <div class="col-lg-8 content mb-5 d-flex align-items-center">
+      <p>
+        We are <b>Little Giants</b>, a Belgian based Esports team focused on Counter-Strike 2.
+        <br />
+        Whether we're practicing, competing, or connecting with our community,
+        our goal is simple: to keep improving and to play at the highest level.
 
-  <br />
-  <br />
-  Join us on our journey as we push our limits, take on new challenges, and aim for victory.
-  Stay updated with our latest matches, streams, and team news.
-</p>
+        <br />
+        <br />
+        Join us on our journey as we push our limits, take on new challenges, and aim for victory.
+        Stay updated with our latest matches, streams, and team news.
 
-<p style="text-align: center;">
-  <b>Game. Compete. Grow.</b>
-</p>
+        <br />
+        <br />
+        <span style="color: rgb(209, 176, 21)">
+          <b>Game. Compete. Grow.</b>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<a name="team"></a>
+<div class="container">
+  <h1 class="text-center">CS2 Team</h1>
+  <div class="row justify-content-between" style="margin-bottom: 80px">
+    {%- for member in site.data.members.team -%}
+      <div class="col-lg-2 member">
+        {%- include member.html member=member -%}
+      </div>
+    {%- endfor -%}
+  </div>
+
+  <h1 class="text-center mt-5 mobile-sm-title">Management</h1>
+  <div class="row justify-content-between" style="margin-bottom: 50px">
+    {%- for member in site.data.members.management -%}
+      <div class="col-lg-12 member">
+        {%- include member.html member=member -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+
+
+<a name="contact"></a>
+<div class="overlay">
+  <div class="container">
+    <h1 class="mobile-sm-title">Contact Us</h1>
+
+    <div class="row" style="margin-bottom: 100px">
+      <div class="col-lg-6 contact">
+        <a href="mailto:{{ site.email }}" target="_blank">
+          <img src="{{ "assets/img/socials-email.png" | relative_url }}">
+          {{ site.email }}
+        </a>
+      </div>
+
+      <div class="col-lg-6 contact">
+        <a href="https://discord.gg/{{ site.discord }}" target="_blank">
+            <img src="{{ "assets/img/socials-discord.png" | relative_url }}">
+            Discord : Little Giants
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<a name="partners"></a>
+<h1>Sponsors</h1>
+
+<div class="container" style="margin-bottom: 80px">
+  <div class="row">
+    <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+      <a href="https://meganck-collewaert.be" target="_blank">
+        <img src="{{ "assets/img/sponsor-mc.png" | relative_url }}" class="img-fluid">
+      </a>
+    </div>
+    <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+      <img src="{{ "assets/img/sponsor-material.png" | relative_url }}" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="overlay">
+  <h1>Partners</h1>
+
+  <div class="container">
+    <div class="row" style="padding-bottom: 50px">
+      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+        <a href="https://itenium.be" target="_blank">
+          <img src="{{ "assets/img/sponsor-itenium.png" | relative_url }}" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+        <img src="{{ "assets/img/sponsor-manatee.png" | relative_url }}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
