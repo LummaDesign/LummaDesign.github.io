@@ -80,7 +80,6 @@ p {
 
     transition: color 0.3s ease, transform 0.2s ease;
 
-    &:hover { color: $navbar-link-active; text-shadow: 0 0 8px #ff4655; }
     &:active { color: $navbar-link-active; }
     &:focus { color: $navbar-link-active; }
     &:focus-visible { color: $navbar-link-active; outline: 2px solid $navbar-link-active; }
