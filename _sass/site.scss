@@ -122,6 +122,7 @@ p {
 
 .contact {
   margin-bottom: 25px;
+  padding-left: 0;
 
   &:first-child {
     text-align: right;
@@ -155,5 +156,9 @@ p {
   .contact {
     text-align: center !important;
     padding-right: 0 !important;
+
+    &:first-child {
+      padding-right: 0 !important;
+    }
   }
 }
