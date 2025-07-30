@@ -60,25 +60,38 @@ layout: default
 
 
 
-<a name="contact"></a>
 <div class="overlay">
-  <div class="container">
-    <h1 class="mobile-sm-title">Contact Us</h1>
-
-    <div class="row" style="margin-bottom: 100px">
-      <div class="col-lg-6 contact">
-        <a href="mailto:{{ site.email }}" target="_blank">
-          <img src="{{ "assets/img/socials-email.png" | relative_url }}">
-          {{ site.email }}
-        </a>
+<div class="container container-spacing">
+  <h1 class="text-center">Fall Guys Team</h1>
+  <div class="row justify-content-between">
+    {%- for member in site.data.members.team-fg -%}
+      <div class="col-lg-2 member">
+        {%- include member.html member=member type="fg_" -%}
       </div>
+    {%- endfor -%}
+  </div>
+</div>
+</div>
 
-      <div class="col-lg-6 contact">
-        <a href="https://discord.gg/{{ site.discord }}" target="_blank">
-            <img src="{{ "assets/img/socials-discord.png" | relative_url }}">
-            Discord : Little Giants
-        </a>
-      </div>
+
+
+<a name="contact"></a>
+<div class="container container-spacing">
+  <h1 class="mobile-sm-title">Contact Us</h1>
+
+  <div class="row">
+    <div class="col-lg-6 contact">
+      <a href="mailto:{{ site.email }}" target="_blank">
+        <img src="{{ "assets/img/socials-email.png" | relative_url }}">
+        {{ site.email }}
+      </a>
+    </div>
+
+    <div class="col-lg-6 contact">
+      <a href="https://discord.gg/{{ site.discord }}" target="_blank">
+          <img src="{{ "assets/img/socials-discord.png" | relative_url }}">
+          Discord : Little Giants
+      </a>
     </div>
   </div>
 </div>
@@ -86,9 +99,9 @@ layout: default
 
 
 <a name="partners"></a>
-<h1>Sponsors</h1>
-
-<div class="container" style="margin-bottom: 80px">
+<div class="overlay">
+<div class="container container-spacing">
+  <h1>Sponsors</h1>
   <div class="row">
     <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
       <a href="https://meganck-collewaert.be" target="_blank">
@@ -102,34 +115,33 @@ layout: default
     </div>
   </div>
 </div>
+</div>
 
 
-
-<div class="overlay">
+<div class="container container-spacing">
   <h1>Partners</h1>
-
-  <div class="container" style="margin-bottom: 30px">
-    <div class="row" style="padding-bottom: 50px">
-      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
-        <a href="https://itenium.be" target="_blank">
-          <img src="{{ "assets/img/sponsor-itenium.png" | relative_url }}" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
-        <a href="https://www.manatee.gg/" target="_blank">
-          <img src="{{ "assets/img/sponsor-manatee.png" | relative_url }}" class="img-fluid">
-        </a>
-      </div>
+  <div class="row">
+    <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+      <a href="https://itenium.be" target="_blank">
+        <img src="{{ "assets/img/sponsor-itenium.png" | relative_url }}" class="img-fluid">
+      </a>
+    </div>
+    <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+      <a href="https://www.manatee.gg/" target="_blank">
+        <img src="{{ "assets/img/sponsor-manatee.png" | relative_url }}" class="img-fluid">
+      </a>
     </div>
   </div>
 </div>
 
 
 
-<div class="container" style="margin-bottom: 30px">
+<div class="overlay">
+<div class="container" style="padding-top: 30px; padding-bottom: 30px">
   <div class="row">
     <div class="col-12 d-flex justify-content-center align-items-center">
       www.little-giants.be - copyrights reserved
     </div>
   </div>
+</div>
 </div>

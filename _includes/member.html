@@ -1,5 +1,6 @@
 {%- assign member = include.member -%}
-{%- assign flag = "/assets/img/flag_" | append: member.country -%}
+{%- assign flag = "/assets/img/flag_" | append: include.type -%}
+{%- assign flag = flag | append: member.country -%}
 {%- assign flag = flag | append: ".png" -%}
 <img src="{{flag | relative_url}}" alt="Flag" class="img-fluid">
 <div class="nickname">{{ member.nick }}</div>

@@ -29,3 +29,21 @@ management:
   nick: OOpman
   last: D.
   country: be
+
+team-fg:
+- first: Jonas
+  nick: OOpman
+  last: D.
+  country: be
+- first: Wouter
+  nick: Laoujin2
+  last: VS.
+  country: be
+- first: Mikky
+  nick: Mikky
+  last: S.
+  country: nl
+- first: Ashely
+  nick: TrashleyPelican
+  last: F.
+  country: usa
