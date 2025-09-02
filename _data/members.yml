@@ -3,22 +3,22 @@ team:
   nick: creeper
   last: D.
   country: be
-- first: Gregory
-  nick: devu
-  last: C.
-  country: be
 - first: Nick
   nick: N1ckson
   last: S.
   country: be
-- first: Djayden
-  nick: ZeThUs
-  last: M.
+- first: TBA
+  nick:
+  last:
   country: be
-- first: Dayvid
-  nick: Miro
-  last: F.
-  country:
+- first: TBA
+  nick:
+  last:
+  country: be
+- first: TBA
+  nick:
+  last:
+  country: be
 # - first:
 #   nick:
 #   last:
